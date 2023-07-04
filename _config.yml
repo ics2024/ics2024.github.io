@@ -1,0 +1,13 @@
+title: International Conference on Supercomputing 2024
+email: ics2024 at c.titech.ac.jp
+description: >- # this means to ignore newlines until "baseurl:"
+  The 38th International Conference on Supercomputing (ICS-2024), the premier international forum for the presentation of research results in HPC systems.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ics2024.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ics2024
+github_username:  ics2024
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
