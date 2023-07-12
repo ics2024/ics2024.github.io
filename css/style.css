@@ -1,0 +1,65 @@
+body {
+  font: 14px Georgia, "Bitstream Charter", serif;
+}
+
+p {
+  display: block;
+}
+
+#title {
+  padding: 10% 5% 5% 5%;
+  text-align: center;
+}
+
+.logo {
+  padding: 10%;
+}
+
+img {
+  margin: auto;
+}
+
+th,
+td {
+  padding: 1%;
+  width: 30%;
+}
+
+.navbar-nav>li>a,
+.navbar-brand {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+  height: 40px;
+}
+
+.navbar {
+  min-height: 30px !important;
+}
+
+.top-spacing {
+  padding-top: 35px;
+}
+
+.spacing {
+  padding: 25px;
+}
+
+.cropped {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.cropped img {
+  margin: -150px 0px 0px -150px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
+  margin: auto;
+}
