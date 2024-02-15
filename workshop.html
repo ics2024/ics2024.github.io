@@ -11,16 +11,16 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src="code.js"></script>
+  <script src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/ICS.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <script src="code.js"></script>
@@ -30,29 +30,18 @@
       addSponsors(getParameterByName("intel"), getParameterByName("harry"));
     });
   </script>
-
-  <style>
-    .row table {
-      font-size: 20px;
-      /* Change this to the size you want */
-    }
-  </style>
-
 </head>
 
 <body>
 
   <a name="home" href="#"></a>
-  <!--Navigation bar-->
   <div id="nav-placeholder"></div>
   <script>
     $("#nav-placeholder").load("nav.html", function () {
-      $("#nav-home").addClass("active")
+      $("#nav-ws").addClass("active")
       console.log("check")
     });
   </script>
-  <!--end of Navigation bar-->
-
 
   <div class="container">
     <div class="row center" id="title">
@@ -67,73 +56,31 @@
       </div>
 
       <!-- <img height=210px src="images/img1.png">
-    <img height=210px src="images/img2.png">
-    <img height=210px src="images/img3.png"> -->
+      <img height=210px src="images/img2.png">
+      <img height=210px src="images/img3.png"> -->
     </div>
 
+    <!-- <div class="row">
+      <div class = "col-md-12">
+      <h5>
+        ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of research results in high-performance computing systems. The 37th conference (ICS-2024) will be held in Orlando, FL.
+      </h5>
+    </div>
+    </div> -->
     <div class="row">
-    <div class = "col-md-12">
-    <h4>
-      ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of
-      research results in high-performance computing systems.
-    </h4>
-    <h4>
-      The 38th conference (ICS-2024) will be held in Kyoto, Japan on June 4-7, 2024.
-    </h4>
-  </div>
-  </div>
-  <div class="row top-spacing">
       <div class="col-md-7">
-        <a href="#" name="papers"></a>
-        <div class="row">
-          <h2>Important dates</h2>
-        </div>
-        <div class="row">
-          <table>
-            <tbody>
-              <tr>
-                <td style="white-space: nowrap;">Abstract submission:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>January 11th, 2024</s> CLOSED</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;">Paper submission:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;"><s>January 18th, 2024</s> CLOSED</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;">Rebuttal period:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">March 18th to March 20th, 2024</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;">Author notification:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">April 2nd, 2024</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;">Camera-ready:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">April 18th, 2024 (tentative)</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;">Dates of the conference:</td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">June 4-7, 2024</span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;"></td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">
-                    <font size="4">- Workshop: June 4th</font>
-                  </span></td>
-              </tr>
-              <tr>
-                <td style="white-space: nowrap;"></td>
-                <td style="white-space: nowrap;"><span style="margin-left: 50px;">
-                    <font size="4">- ICS2024: June 5-7</font>
-                  </span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="row">
-          <h4 style="color:red;"><br>All submission dates above are AOE (Anywhere on Earth).</h4>
-        </div>
-      </div>
+        <a href="#" name="program"></a>
+        <div class="row top-spacing">
+		<h2>Workshops (June 4th)</h2><br>
+     </div>
+  <h4>
+    ICS2024 will hold the following workshops:<br><br>
+<ul>
+  <li><a href="">QCCC: International Workshop on Quantum Classical Cooperative Computing</a></li><br>
+  <li><a href="https://aitech.ac.jp/~dslab/ftac2024/">2nd Workshop on FPGA Technologies for Adaptive Computing (FTAC 2024)</a></li>
+</ul>
+  </h4>
+</div>
       <div class="col-md-1">
       </div>
       <!-- <div class="col-md-3" id="supporters"> -->
@@ -198,9 +145,10 @@
         </div>
       </div>
     </div>
-  <div class="footer">
-    <!-- <div id="intelMessage"></div> -->
   </div>
+  <!-- <div class="footer">
+    <div id="intelMessage"></div>
+  </div> -->
 
 </body>
 
