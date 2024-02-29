@@ -39,41 +39,71 @@ function addSponsors(intel = 2, harry) {
     html += '<h3>Supporters:</h3>'
     html += '</div>'
 
-    if (true) {
-        html += '<div class="row spacing">'
-        html += '<div class="col-md-2">'
-        html += '<div class="text-center">'
-        html += ' <a href="https://www.intel.com/" >'
-        if (intel != null) {
-            html += '<img src="images/intel/intel' + intel + '.png" height="75" class="logo">'
-        } else {
-            html += '<img src="images/intel/intel2' + '.png" height="75" class="logo">'
-        }
-        html += '</a>'
-        html += ' </div>'
-        html += ' </div>'
-        html += '</div>'
-        html += '<br>'
-    }
+    html += '<div class="row">';
+    html += "<h3>- Platinum</h3>";
+    html += "</div>";
+
+    html += '<div class="row">';
+    html += "<h3>- Gold</h3>";
+    html += "</div>";
+
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://www.fujitsu.com/" >';
+    html += '<font size="7">Fujitsu</font>';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
+    html += '<div class="row">'
+    html += "<h3>- Silver</h3>"
+    html += "</div>"
 
     html += '<div class="row spacing">'
     html += '<div class="col-md-2">'
     html += '<div class="text-center">'
-    html += ' <a href="https://www.genivia.com/" >'
-    html += '<img src="images/genivia.png" height="75" class="logo">'
+    html += ' <a href="https://altair.com/" >';
+    html +=
+      '<img src="images/Altair_Brandmark_Hz_RGB_FullColor.svg" height="40" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
+    html += '<div class="row spacing">'
+    html += '<div class="col-md-2">'
+    html += '<div class="text-center">'
+    html += ' <a href="https://www.ibextech.jp/" >';
+    html += '<img src="images/IBEX_Logo-E1.png" height="80" class="logo">';
     html += '</a>'
     html += ' </div>'
     html += ' </div>'
     html += '</div>'
 
+    html += '<div class="row">';
+    html += "<h3>- Bronze</h3>";
+    html += "</div>";
+
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://www.nec.com/" >';
+    html += '<font size="6">NEC</font>';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
     if (true) {
 
-        html += '<div class="row">'
-        html += '<h3><a href="memoriam.html#memorial">In Memoriam</a></h3>'
-        html += '</div>'
-        html += '<div class="row spacing">'
-        html += '<br>'
-        html += '</div>'
+        // html += '<div class="row">'
+        // html += '<h3><a href="memoriam.html#memorial">In Memoriam</a></h3>'
+        // html += '</div>'
+        // html += '<div class="row spacing">'
+        // html += '<br>'
+        // html += '</div>'
 
         // html += '<div class="row spacing">'
         // html += ' <h4>'
