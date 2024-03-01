@@ -90,7 +90,7 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html += ' <a href="https://www.nec.com/" >';
-    html += '<font size="6">NEC</font>';
+    html += '<img src="images/NEC.png" height="100" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
