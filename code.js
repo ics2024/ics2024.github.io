@@ -51,7 +51,7 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html += ' <a href="https://www.fujitsu.com/" >';
-    html += '<font size="7">Fujitsu</font>';
+    html += '<img src="images/fujitsu.jpg" height="130" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
