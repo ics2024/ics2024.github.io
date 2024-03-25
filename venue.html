@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -19,7 +18,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/ICS.png">
-  <link rel="manifest" href="../site.webmanifest">
   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -35,6 +33,8 @@
 <body>
 
   <a name="home" href="#"></a>
+
+  <!--Navigation bar-->
   <div id="nav-placeholder"></div>
   <script>
     $("#nav-placeholder").load("nav.html", function () {
@@ -42,6 +42,10 @@
       console.log("check")
     });
   </script>
+  <!--end of Navigation bar-->
+
+
+
 
   <div class="container">
     <div class="row center" id="title">
@@ -51,7 +55,7 @@
         <h2 class="text-center">June 4-7, 2024</h2>
         <h3 class="text-center">International Conference Hall, Kyoto University, Kyoto, Japan</h3>
         <!-- <h3 class="text-center"><a href="https://fcrc.acm.org/"><a href="https://fcrc.acm.org/">In Conjunction with the
-              Federated Computing Research Conference</a></a></h3> -->
+                      Federated Computing Research Conference</a></a></h3> -->
         <img class="img-fluid" height=210px src="images/big_view.png">
       </div>
 
@@ -67,34 +71,40 @@
       </h5>
     </div>
     </div> -->
-    <div class="row">
-      <div class="col-md-7">
-        <a href="#" name="venue"></a>
-        <div class="row top-spacing">
-          <h2>Conference Venue</h2>
-        </div>
-        <h4>International Conference Hall, Kyoto University</h4>
+    <div class="row top-spacing">
+      <div class="col-md-8 confinfo">
+        <h2 class="column-title">
+          Conference Venue
+        </h2>
+<h4>
+International Conference Hall, Kyoto University<br><br>
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13068.914066294397!2d135.7807109!3d35.0260127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109738adcbc03%3A0xcf14f6a2cabe8548!2sInternational%20Exchange%20Hall!5e0!3m2!1sen!2sjp!4v1705119671252!5m2!1sen!2sjp"
   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="row top-spacing">
-          <h2>Social Events</h2>
-        </div>
-        <h4>TBD</h4>
-        <div class="row top-spacing">
-          <h2>Accommodation</h2>
-        </div>
-  <h4>
-ICS2024 provides accommodation in the following facilities.
-  </h4>
-        <h3>Hotels
+</h4>
+
+        <h2 class="row">
+          Social Events
+        </h2>
+        <div class="intro-content-text">
+
+<h4>
+TBD
+</h4>
+
+<h2 class="row">
+  Accommodation
+</h2>
+<h4>
+  ICS2024 provides accommodation in the following facilities.
+</h4>
+<h3>Hotels
   <h4>
     <ul>
       <li><a href="https://www.resol-kyoto-k.com/en/">HOTEL RESOL KYOTO KAWARAMACHI SANJO</a></li><br>
       <li><a href="https://www.hotelgp-kyoto.com/english/">KYOTO GARDEN PALACE</a></li> <br>
-      <li><a
-          href="https://randb.jp/en/kawaramachi/">R&B Hotel Kyoto Shijokawaramachi</a></li><br>
+      <li><a href="https://randb.jp/en/kawaramachi/">R&B Hotel Kyoto Shijokawaramachi</a></li><br>
       <li><a href="https://www.royalparkhotels.co.jp/the/kyotosanjo/">THE ROYAL PARK KYOTO SANJO</a></li>
     </ul>
   </h4>
@@ -107,112 +117,122 @@ ICS2024 provides accommodation in the following facilities.
       <br>
       <li><a href="">GION YOSHI-IMA</a></li><br>
     </ul>
-If you wish to stay at one of these hotels or inns, please send an email to ais_at_rainbowt.jp (replace '_at_' with @)
-with the following information by <p style="color: red;"><strong>April 24th (AOE)</strong>.</p>
-However, <u>the number of rooms is limited</u>, so we recommend that you contact us as soon as possible if you wish to make a
-reservation. Hotel reservations are handled on a first-come, first-served basis.<br><br>
-        <ul>
-          <li>Name: </li><br>
-          <li>Hotel / Ryokans where you wish to stay: </li><br>
-          <li>Breakfast required: </li><br>
-          <li>Check-in date: </li><br>
-          <li>Check-out date: </li><br>
-          <li>Any requests: </li><br>
-        </ul>
-        Of course, there are other hotels and ryokans in Kyoto, so you can also make your own accommodation arrangements through hotel booking websites, such as Booking.com, Expedia, etc.
+    If you wish to stay at one of these hotels or inns, please send an email to ais_at_rainbowt.jp (replace '_at_' with
+    @)
+    with the following information by <p style="color: red;"><strong>April 24th (AOE)</strong>.</p>
+    However, <u>the number of rooms is limited</u>, so we recommend that you contact us as soon as possible if you wish
+    to make a
+    reservation. Hotel reservations are handled on a first-come, first-served basis.<br><br>
+    <ul>
+      <li>Name: </li><br>
+      <li>Hotel / Ryokans where you wish to stay: </li><br>
+      <li>Breakfast required: </li><br>
+      <li>Check-in date: </li><br>
+      <li>Check-out date: </li><br>
+      <li>Any requests: </li><br>
+    </ul>
+    Of course, there are other hotels and ryokans in Kyoto, so you can also make your own accommodation arrangements
+    through hotel booking websites, such as Booking.com, Expedia, etc.
 
-      </h4>
+  </h4>
 </h3>
-        <div class="row top-spacing">
-          <h2>Local Information</h2>
-        </div>
-        <h4>Below you will find information and services for traveling to Kyoto. These will make your stay easier and provide
-        opportunities to enjoy Kyoto more. Please check them out!
-        <br><br>
-        <ul>
-          <li>Kyoto Official Travel Guide: <a href="https://kyoto.travel/en">https://kyoto.travel/en</a></li><br>
-          <a href="https://kyoto.travel/en">
-            <img src="./images/kyoto_travel_2.jpg" alt="">
-          </a>
-          <br><br>
-          <li>Kyoto Official Travel Guide (in Japanese): <a href="https://ja.kyoto.travel/">https://ja.kyoto.travel/</a></li><br>
-          <a href="https://ja.kyoto.travel/">
-            <img src="./images/kankonavi.jpg" alt="" width="320">
-          </a>
-          <br><br>
-          <li>Clematis - The City of Kyoto Visitors Host Search Site -: <a href="https://www.kyotovisitorshost.com/en/">https://www.kyotovisitorshost.com/en/</a></li><br>
-          <a href="https://www.kyotovisitorshost.com/en/">
-            <img src="./images/visitors_hout_1.jpg" alt="" width="320">
-          </a>
-        </ul>
-      </h4>
+
+<h2 class="row">
+  Local Information
+</h2>
+<h4>Below you will find information and services for traveling to Kyoto. These will make your stay easier and provide
+  opportunities to enjoy Kyoto more. Please check them out!
+  <br><br>
+  <ul>
+    <li>Kyoto Official Travel Guide: <a href="https://kyoto.travel/en">https://kyoto.travel/en</a></li><br>
+    <a href="https://kyoto.travel/en">
+      <img src="./images/kyoto_travel_2.jpg" alt="">
+    </a>
+    <br><br>
+    <li>Kyoto Official Travel Guide (in Japanese): <a href="https://ja.kyoto.travel/">https://ja.kyoto.travel/</a></li>
+    <br>
+    <a href="https://ja.kyoto.travel/">
+      <img src="./images/kankonavi.jpg" alt="" width="320">
+    </a>
+    <br><br>
+    <li>Clematis - The City of Kyoto Visitors Host Search Site -: <a
+        href="https://www.kyotovisitorshost.com/en/">https://www.kyotovisitorshost.com/en/</a></li><br>
+    <a href="https://www.kyotovisitorshost.com/en/">
+      <img src="./images/visitors_hout_1.jpg" alt="" width="320">
+    </a>
+  </ul>
+</h4>
+
+
+        </div><!-- single intro text end-->
+      </div><!-- col end-->
       <div class="col-md-3" id="supporters">
 
         <!-- <div class="row">
-        <h3>Supporters:</h3>
-      </div> -->
+            <h3>Supporters:</h3>
+          </div> -->
         <div class="row">
           <!-- <div class="row">
-          <h4>Gold:</h4>
-        </div> -->
+              <h4>Gold:</h4>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="http://www.paratools.com/" >
-                <img src="../paratools_logo.jpg" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="http://www.paratools.com/" >
+                    <img src="../paratools_logo.jpg" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.mellanox.com/" >
-                <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.mellanox.com/" >
+                    <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.amd.com/en" >
-                <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.amd.com/en" >
+                    <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
           <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://openpowerfoundation.org/" >
-                <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://openpowerfoundation.org/" >
+                    <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
         </div>
         <div class="row">
           <!-- <div class="row">
-          <h4>Bronze:</h4>
-        </div> -->
+              <h4>Bronze:</h4>
+            </div> -->
           <!-- <div class="row" >
-          <div class="col-md-2" >
-            <div class="text-center" >
-              <a href="https://www.hpccharm.com/">
-                <img src="../charmworks-logo.png" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+              <div class="col-md-2" >
+                <div class="text-center" >
+                  <a href="https://www.hpccharm.com/">
+                    <img src="../charmworks-logo.png" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
         </div>
       </div>
-    </div>
+    </div><!-- row end-->
   </div>
   <!-- <div class="footer">
-    <div id="intelMessage"></div>
-  </div> -->
-  </div>
+    <div id="intelMessage"></div> -->
+  <!-- </div> -->
+
 </body>
 
 </html>
