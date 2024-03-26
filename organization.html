@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -19,7 +18,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/ICS.png">
-  <!-- <link rel="manifest" href="../site.webmanifest"> -->
   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -35,6 +33,8 @@
 <body>
 
   <a name="home" href="#"></a>
+
+  <!--Navigation bar-->
   <div id="nav-placeholder"></div>
   <script>
     $("#nav-placeholder").load("nav.html", function () {
@@ -42,6 +42,10 @@
       console.log("check")
     });
   </script>
+  <!--end of Navigation bar-->
+
+
+
 
   <div class="container">
     <div class="row center" id="title">
@@ -51,7 +55,7 @@
         <h2 class="text-center">June 4-7, 2024</h2>
         <h3 class="text-center">International Conference Hall, Kyoto University, Kyoto, Japan</h3>
         <!-- <h3 class="text-center"><a href="https://fcrc.acm.org/"><a href="https://fcrc.acm.org/">In Conjunction with the
-                              Federated Computing Research Conference</a></a></h3> -->
+                      Federated Computing Research Conference</a></a></h3> -->
         <img class="img-fluid" height=210px src="images/big_view.png">
       </div>
 
@@ -68,11 +72,15 @@
     </div>
     </div> -->
     <div class="row top-spacing">
-      <div class="col-md-7">
-        <a href="#" name="organization"></a>
-        <div class="row">
-          <h2>Organization</h2>
-        </div>
+      <div class="col-md-8 confinfo">
+        <h2 class="column-title">
+          Organization
+        </h2>
+        <div class="intro-content-text">
+
+<h4>
+<br>
+
         <div class="row">
           <table style="font-size: 16px;">
             <tr>
@@ -115,58 +123,57 @@
             </tr>
           </table>
         </div>
-      <br>
-      <div class="row">
-        <h2>Program Committee:</h2>
-      </div>
-      <!-- <h1>TBD</h1> -->
-      <div class="row">
-        <table style="font-size: 16px;">
-          <tr>
-            <td>Mieszko Liz</td>
-            <td>Zidong Du</td>
-            <td>Hung-Wei Tseng</td>
-          </tr>
-          <tr>
-            <td>Daniel Wong</td>
-            <td>Smruti Sarangi</td>
-            <td>Soner Onder</td>
-          </tr>
-          <tr>
-            <td>Amirsaman Memaripour</td>
-            <td>Seunghee Shin</td>
-            <td>Rachata Ausavarungnirun</td>
-          </tr>
-          <tr>
-            <td>Dimitris Gizopoulos</td>
-            <td>Jayesh Gaur</td>
-            <td>Michael Ferdman</td>
-          </tr>
-          <tr>
-            <td>Ashish Venkat</td>
-            <td>Jian Huang</td>
-            <td>Xun (Steve) Jian</td>
-          </tr>
-          <tr>
-            <td>Josué Feliu</td>
-            <td>R Govindarajan</td>
-            <td>Chao Li</td>
-          </tr>
-          <tr>
-            <td>James Tuck</td>
-            <td>Uday Kurkure</td>
-            <td>Hanjun Kim</td>
-          </tr>
-          <tr>
-            <td>Jeongseob Ahn</td>
-            <td>Mingzhe Zhang</td>
-            <td>Gwangsun Kim</td>
-          </tr>
-          <tr>
-            <td>Guru Venkataramani</td>
-            <td>Ryota Shioya</td>
-            <td>Youngsok Kim</td>
-          </tr>
+</h4>
+        <div class="row">
+          <h2>Program Committee:</h2>
+        </div>
+        <div class="row">
+          <table style="font-size: 16px;">
+            <tr>
+              <td>Mieszko Liz</td>
+              <td>Zidong Du</td>
+              <td>Hung-Wei Tseng</td>
+            </tr>
+            <tr>
+              <td>Daniel Wong</td>
+              <td>Smruti Sarangi</td>
+              <td>Soner Onder</td>
+            </tr>
+            <tr>
+              <td>Amirsaman Memaripour</td>
+              <td>Seunghee Shin</td>
+              <td>Rachata Ausavarungnirun</td>
+            </tr>
+            <tr>
+              <td>Dimitris Gizopoulos</td>
+              <td>Jayesh Gaur</td>
+              <td>Michael Ferdman</td>
+            </tr>
+            <tr>
+              <td>Ashish Venkat</td>
+              <td>Jian Huang</td>
+              <td>Xun (Steve) Jian</td>
+            </tr>
+            <tr>
+              <td>Josué Feliu</td>
+              <td>R Govindarajan</td>
+              <td>Chao Li</td>
+            </tr>
+            <tr>
+              <td>James Tuck</td>
+              <td>Uday Kurkure</td>
+              <td>Hanjun Kim</td>
+            </tr>
+            <tr>
+              <td>Jeongseob Ahn</td>
+              <td>Mingzhe Zhang</td>
+              <td>Gwangsun Kim</td>
+            </tr>
+            <tr>
+              <td>Guru Venkataramani</td>
+              <td>Ryota Shioya</td>
+              <td>Youngsok Kim</td>
+            </tr>
             <tr>
               <td>Yu Hua</td>
               <td>Omer Khan</td>
@@ -290,141 +297,139 @@
             <tr>
               <td>Xavier Martorell</td>
             </tr>
-        </table>
-      </div>
+          </table>
+        </div>
 
-      <div class="row">
-        <h2>Steering Committee</h2>
-      </div>
+                <div class="row">
+                  <h2>Steering Committee</h2>
+                </div>
+                <div class="row">
+                  <table style="font-size: 16px;">
+                    <tr>
+                      <td>Alex Veidenbaum, Chair, University of California Irvine, USA</td>
+                      <td>Eduard Ayguade, Barcelona Supercomputing Center</td>
+                      <td>Rosa Badia, Barcelona Supercomputing Center</td>
+                    </tr>
+                    <tr>
+                      <td>Pete Beckman, Argonne Natl Lab, USA</td>
+                      <td>Fran Cazorla, Technical University of Catalonia/BSC, Spain</td>
+                      <td>Fred Chong, University of Chicago, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Chen Ding, University of Rochester, USA</td>
+                      <td>Rudi Eigenman, University of Delaware, USA</td>
+                      <td>Yoav Etsion, Technion, Israel</td>
+                    </tr>
+                    <tr>
+                      <td>Peter Hofstee, IBM and TU Delft</td>
+                      <td>Wen-mei Hwu, nVidia, USA</td>
+                      <td>Kyle Gallivan, Florida State University, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Bill Gropp, University of Illinois,USA</td>
+                      <td>James Goodman, USA</td>
+                      <td>Michael Gschwind, Facebook</td>
+                    </tr>
+                    <tr>
+                      <td>Mahmut Kandemir, Pennsylvania State University, USA</td>
+                      <td>Zhiyuan Li, Purdue, USA</td>
+                      <td>Sally A. McKee, Clemson, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Avi Mendelson, Technion, Israel</td>
+                      <td>Jose Moreira, IBM, USA</td>
+                      <td>Frank Mueller, NCSU, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Nicolau, University of California Irvine, USA</td>
+                      <td>Constantine Polychronopoulos, Juniper Networks, USA</td>
+                      <td>Lawrence Rauchwerger, University of Illinois, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Valentina Salapura, AMD USA</td>
+                      <td>John Sopka, USA</td>
+                      <td>Mateo Valero, Technical University of Catalonia/BSC, Spain</td>
+                    </tr>
+                    <tr>
+                      <td>Harry Wijshoff, Leiden University, The Netherlands</td>
+                      <td>Huiyang Zhou, NCSU</td>
+                      <td>Kirk Cameron VTU, USA</td>
+                    </tr>
+                    <tr>
+                      <td>Dimitrios Nikolopoulos, VTU, USA</td>
+                      <td>Dionisios Pnevmatikatos, NTUA Greece</td>
+                    </tr>
+                  </table>
+                </div>
 
-      <div class="row">
-        <table style="font-size: 16px;">
-            <tr>
-              <td>Alex Veidenbaum, Chair, University of California Irvine, USA</td>
-              <td>Eduard Ayguade, Barcelona Supercomputing Center</td>
-              <td>Rosa Badia, Barcelona Supercomputing Center</td>
-            </tr>
-            <tr>
-              <td>Pete Beckman, Argonne Natl Lab, USA</td>
-              <td>Fran Cazorla, Technical University of Catalonia/BSC, Spain</td>
-              <td>Fred Chong, University of Chicago, USA</td>
-            </tr>
-            <tr>
-              <td>Chen Ding, University of Rochester, USA</td>
-              <td>Rudi Eigenman, University of Delaware, USA</td>
-              <td>Yoav Etsion, Technion, Israel</td>
-            </tr>
-            <tr>
-              <td>Peter Hofstee, IBM and TU Delft</td>
-              <td>Wen-mei Hwu, nVidia, USA</td>
-              <td>Kyle Gallivan, Florida State University, USA</td>
-            </tr>
-            <tr>
-              <td>Bill Gropp, University of Illinois,USA</td>
-              <td>James Goodman, USA</td>
-              <td>Michael Gschwind, Facebook</td>
-            </tr>
-            <tr>
-              <td>Mahmut Kandemir, Pennsylvania State University, USA</td>
-              <td>Zhiyuan Li, Purdue, USA</td>
-              <td>Sally A. McKee, Clemson, USA</td>
-            </tr>
-            <tr>
-              <td>Avi Mendelson, Technion, Israel</td>
-              <td>Jose Moreira, IBM, USA</td>
-              <td>Frank Mueller, NCSU, USA</td>
-            </tr>
-            <tr>
-              <td>Alex Nicolau, University of California Irvine, USA</td>
-              <td>Constantine Polychronopoulos, Juniper Networks, USA</td>
-              <td>Lawrence Rauchwerger, University of Illinois, USA</td>
-            </tr>
-            <tr>
-              <td>Valentina Salapura, AMD USA</td>
-              <td>John Sopka, USA</td>
-              <td>Mateo Valero, Technical University of Catalonia/BSC, Spain</td>
-            </tr>
-            <tr>
-              <td>Harry Wijshoff, Leiden University, The Netherlands</td>
-              <td>Huiyang Zhou, NCSU</td>
-              <td>Kirk Cameron VTU, USA</td>
-            </tr>
-            <tr>
-              <td>Dimitrios Nikolopoulos, VTU, USA</td>
-              <td>Dionisios Pnevmatikatos, NTUA Greece</td>
-            </tr>
-        </table>
-      </div>
-      <div class="col-md-1">
-      </div>
+      </div><!-- single intro text end-->
+      </div><!-- col end-->
       <div class="col-md-3" id="supporters">
 
-      <!-- <div class="row">
-        <h3>Supporters:</h3>
-      </div> -->
-      <div class="row">
         <!-- <div class="row">
-          <h4>Gold:</h4>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="http://www.paratools.com/" >
-                <img src="../paratools_logo.jpg" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.mellanox.com/" >
-                <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://www.amd.com/en" >
-                <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-md-2">
-            <div class="text-center">
-              <a href="https://openpowerfoundation.org/" >
-                <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
+            <h3>Supporters:</h3>
+          </div> -->
+        <div class="row">
+          <!-- <div class="row">
+              <h4>Gold:</h4>
+            </div> -->
+          <!-- <div class="row">
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="http://www.paratools.com/" >
+                    <img src="../paratools_logo.jpg" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
+          <!-- <div class="row">
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.mellanox.com/" >
+                    <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
+          <!-- <div class="row">
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://www.amd.com/en" >
+                    <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
+          <!-- <div class="row">
+              <div class="col-md-2">
+                <div class="text-center">
+                  <a href="https://openpowerfoundation.org/" >
+                    <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
+        </div>
+        <div class="row">
+          <!-- <div class="row">
+              <h4>Bronze:</h4>
+            </div> -->
+          <!-- <div class="row" >
+              <div class="col-md-2" >
+                <div class="text-center" >
+                  <a href="https://www.hpccharm.com/">
+                    <img src="../charmworks-logo.png" height="60" class="logo">
+                  </a>
+                </div>
+              </div>
+            </div> -->
+        </div>
       </div>
-      <div class="row">
-        <!-- <div class="row">
-          <h4>Bronze:</h4>
-        </div> -->
-        <!-- <div class="row" >
-          <div class="col-md-2" >
-            <div class="text-center" >
-              <a href="https://www.hpccharm.com/">
-                <img src="../charmworks-logo.png" height="60" class="logo">
-              </a>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-  </div>
+    </div><!-- row end-->
   </div>
   <!-- <div class="footer">
-    <div id="intelMessage"></div>
-  </div> -->
-
+    <div id="intelMessage"></div> -->
+  <!-- </div> -->
 
 </body>
 
