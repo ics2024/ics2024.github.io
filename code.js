@@ -106,6 +106,17 @@ function addSponsors(intel = 2, harry) {
     html += " </div>";
     html += "</div>";
 
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://chiptip.tech/ " >';
+    html +=
+      '<img src="images/chiptip_logo_170720.svg" height="125" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
     if (true) {
 
         // html += '<div class="row">'
