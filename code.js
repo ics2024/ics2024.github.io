@@ -40,10 +40,6 @@ function addSponsors(intel = 2, harry) {
     html += '</div>'
 
     html += '<div class="row">';
-    html += "<h3>- Platinum</h3>";
-    html += "</div>";
-
-    html += '<div class="row">';
     html += "<h3>- Gold</h3>";
     html += "</div>";
 
