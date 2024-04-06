@@ -30,6 +30,48 @@
       addSponsors(getParameterByName("intel"), getParameterByName("harry"));
     });
   </script>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    /* 枠線を灰色に */
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+    /* セルの内容を上端に揃える */
+    border: 1px solid grey;
+    /* セルの枠線を灰色に */
+  }
+
+  .mid th {
+    background-color: purple;    /* 背景色を紫色に */
+    color: white;    /* 文字色を白に */
+    text-align: center; /* セルの内容を中央揃えに */
+    vertical-align: middle; /* セルの内容を垂直中央揃えに */
+    width: 40%;    /* Room AとRoom Bの列の幅を同一に */
+    border: 1px solid white;
+  }
+
+  th:first-child,
+  .time {
+    width: 20%;
+    /* 最初の空白列と時間表示列の幅を20%に設定 */
+    vertical-align: middle;
+    /* 時間表示セルの内容を垂直中央に揃える */
+  }
+
+  .workshop {
+    width: 40%;
+    /* ワークショップ列の幅を40%に統一 */
+  }
+</style>
+
 </head>
 
 <body>
@@ -77,24 +119,28 @@
     <h2>June 4th (Tue), 2024</h2>
     <hr>
     <h4>
-    <table style="width:100%;">
+<table>
   <tr class="mid">
-    <th style="width: 12.5%;"></th>
-    <th style="width: 21.875%;">Room A</th>
-    <th style="width: 21.875%;">Room B</th>
+    <th></th> <!-- 最初の空白列 -->
+    <th>Room A</th>
+    <th>Room B</th>
   </tr>
   <tr>
     <td class="time">13:00 - 17:30</td>
-    <td>
-      <div class="h top">Workshop - 1<p></p></div>
+    <td class="workshop">
+      <li class="h top">Workshop - 1<p></p></li>
       <div>
-        <a href="https://qcccadmin.github.io/qccc/">QCCC: International Workshop on Quantum Classical Cooperative Computing</a>
+        <a href="https://qcccadmin.github.io/qccc/">QCCC: International Workshop on Quantum Classical Cooperative
+          Computing</a>
       </div>
     </td>
-    <td>
-      <div class="h top">Workshop - 2<p></p></div>
+    <td class="workshop">
+      <li class="h top">Workshop - 2<p></p>
+      </li>
+      </div>
       <div>
-        <a href="https://aitech.ac.jp/~dslab/ftac2024/">2nd Workshop on FPGA Technologies for Adaptive Computing (FTAC 2024)</a>
+        <a href="https://aitech.ac.jp/~dslab/ftac2024/">2nd Workshop on FPGA Technologies for Adaptive Computing (FTAC
+          2024)</a>
       </div>
     </td>
   </tr>
