@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ICS 2024</title>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/ICS.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="code.js"></script>
+  <script>
+    console.log(getParameterByName("intel"));
+    $(document).ready(function () {
+      addSponsors(getParameterByName("intel"), getParameterByName("harry"));
+    });
+  </script>
+</head>
+
+<body>
+
+  <a name="home" href="#"></a>
+  <div id="nav-placeholder"></div>
+  <script>
+    $("#nav-placeholder").load("nav.html", function () {
+      $("#nav-author").addClass("active")
+      console.log("check")
+    });
+  </script>
+
+  <div class="container">
+    <div class="row center" id="title">
+      <div class="col-md-12">
+        <!-- <img src="images/acm_logo_tablet.svg" > -->
+        <h1 class="text-center">ICS 2024: International Conference on Supercomputing</h1>
+        <h2 class="text-center">June 4-7, 2024</h2>
+        <h3 class="text-center">International Conference Hall, Kyoto University, Kyoto, Japan</h3>
+        <!-- <h3 class="text-center"><a href="https://fcrc.acm.org/"><a href="https://fcrc.acm.org/">In Conjunction with the
+              Federated Computing Research Conference</a></a></h3> -->
+        <img class="img-fluid" height=210px src="images/big_view.png">
+      </div>
+
+      <!-- <img height=210px src="images/img1.png">
+      <img height=210px src="images/img2.png">
+      <img height=210px src="images/img3.png"> -->
+    </div>
+
+    <!-- <div class="row">
+      <div class = "col-md-12">
+      <h5>
+        ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of research results in high-performance computing systems. The 37th conference (ICS-2024) will be held in Orlando, FL.
+      </h5>
+    </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#" name="program"></a>
+        <div class="row top-spacing">
+		<h2>Camera-ready submission</h2><br>
+     </div>
+<h4>
+  The submission of camera-ready manuscripts consists of the following steps.
+</h4>
+     <h4>
+    Please complete all steps no later than <strong><font color="red">April 22nd, 2024 AOE</font></strong>.<p></p>
+<ol>
+  <li><strong>Complete your e-Rights form first.</strong></li><p></p>
+  Authors whose manuscripts are accepted for publication will receive an email from rightsreview@acm.org regarding the
+  copyright transfer (check your spam settings if you do not receive it). Please indicate on the e-rights form which
+  copyright form you would like to select. If payment is required (Open Access is selected), please complete the payment.
+  <u>If you do not complete this step, you will not receive an e-mail with the DOI or the TAPS link, and you will not be able
+  to proceed to step 2 and beyond.</u> <font color="red">Please complete this step first.</font><p></p>
+  <li><strong>Add the complete rights text and bibliographic strip to your camera-ready manuscript.</strong></li><p></p>
+  After completing their e-Rights form, authors will be emailed the complete rights text and bibliographic strip that must
+  be added to their paper. Please add them to your camera-ready manuscript.<p></p>
+  <li><strong>Upload your camera-ready manuscript to The ACM Publishing System (TAPS).</strong></li><p></p>
+  Authors who have successfully completed their e-Rights forms will be instructed to upload their source files directly to
+  The ACM Production System (TAPS). Please see <a href="https://authors.acm.org/proceedings/production-information/taps-production-workflow">TAPS Workflow</a> for more detail and complete the upload to TAPS.
+</ol>
+Once again, we remind you that all of these steps must be completed by <strong>
+  <font color="red">April 22nd, 2024 AOE</font>
+</strong>. In other words, please make sure
+that your manuscript has been approved by TAPS by the deadline. If approved, you will see the status become 100 %.<p></p>
+<u>Page limit is 11 pages (not including references), but you can purchase up to two extra pages and the fee is 12,000 JPY (approximately 80 USD) per page.</u><p></p>
+If there is a possibility that you may not be able to meet the deadline, please <a href="contact.html">contact us</a> immediately.
+  </h4>
+</div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3" id="supporters">
+
+        <!-- <div class="row">
+        <h3>Supporters:</h3>
+      </div> -->
+        <div class="row">
+          <!-- <div class="row">
+          <h4>Gold:</h4>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="http://www.paratools.com/" >
+                <img src="../paratools_logo.jpg" height="60" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://www.mellanox.com/" >
+                <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://www.amd.com/en" >
+                <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://openpowerfoundation.org/" >
+                <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+        </div>
+        <div class="row">
+          <!-- <div class="row">
+          <h4>Bronze:</h4>
+        </div> -->
+          <!-- <div class="row" >
+          <div class="col-md-2" >
+            <div class="text-center" >
+              <a href="https://www.hpccharm.com/">
+                <img src="../charmworks-logo.png" height="60" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div id="intelMessage"></div>
+  </div> -->
+
+</body>
+
+</html>
