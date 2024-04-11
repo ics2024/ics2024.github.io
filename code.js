@@ -57,6 +57,16 @@ function addSponsors(intel = 2, harry) {
     html += "<h3>- Silver</h3>"
     html += "</div>"
 
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://www.ibextech.jp/" >';
+    html += '<img src="images/IBEX_Logo-E1.png" height="80" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
     html += '<div class="row spacing">'
     html += '<div class="col-md-2">'
     html += '<div class="text-center">'
@@ -68,16 +78,6 @@ function addSponsors(intel = 2, harry) {
     html += " </div>";
     html += "</div>";
 
-    html += '<div class="row spacing">'
-    html += '<div class="col-md-2">'
-    html += '<div class="text-center">'
-    html += ' <a href="https://www.ibextech.jp/" >';
-    html += '<img src="images/IBEX_Logo-E1.png" height="80" class="logo">';
-    html += '</a>'
-    html += ' </div>'
-    html += ' </div>'
-    html += '</div>'
-
     html += '<div class="row spacing">';
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
@@ -87,6 +87,17 @@ function addSponsors(intel = 2, harry) {
     html += " </div>";
     html += " </div>";
     html += "</div>";
+
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://www.i-highway.com/en/" >';
+    html += '<img src="images/i-highway_logo.svg" height="110" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
 
     html += '<div class="row">';
     html += "<h3>- Bronze</h3>";
