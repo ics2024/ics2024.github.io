@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ICS 2024</title>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/ICS.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/ICS.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="code.js"></script>
+  <script>
+    console.log(getParameterByName("intel"));
+    $(document).ready(function () {
+      addSponsors(getParameterByName("intel"), getParameterByName("harry"));
+    });
+  </script>
+</head>
+
+<body>
+
+  <a name="home" href="#"></a>
+  <div id="nav-placeholder"></div>
+  <script>
+    $("#nav-placeholder").load("nav.html", function () {
+      $("#nav-home").addClass("active")
+      console.log("check")
+    });
+  </script>
+
+  <div class="container">
+    <div class="row center" id="title">
+      <div class="col-md-12">
+        <!-- <img src="images/acm_logo_tablet.svg" > -->
+        <h1 class="text-center">ICS 2024: International Conference on Supercomputing</h1>
+        <h2 class="text-center">June 4-7, 2024</h2>
+        <h3 class="text-center">International Conference Hall, Kyoto University, Kyoto, Japan</h3>
+        <!-- <h3 class="text-center"><a href="https://fcrc.acm.org/"><a href="https://fcrc.acm.org/">In Conjunction with the
+              Federated Computing Research Conference</a></a></h3> -->
+        <img class="img-fluid" height=210px src="images/big_view.png">
+      </div>
+
+      <!-- <img height=210px src="images/img1.png">
+      <img height=210px src="images/img2.png">
+      <img height=210px src="images/img3.png"> -->
+    </div>
+
+    <!-- <div class="row">
+      <div class = "col-md-12">
+      <h5>
+        ACM International Conference on Supercomputing (ICS) is the premier international forum for the presentation of research results in high-performance computing systems. The 37th conference (ICS-2024) will be held in Orlando, FL.
+      </h5>
+    </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#" name="program"></a>
+        <div class="row top-spacing">
+		<h2>ICS 2024 accepted papers (as of April 17th)</h2><br>
+     </div>
+  <h4>
+    The following paper has been accepted for publication in ICS 2024. Congratulations!<br><br>
+    <ol>
+      <li><strong>CommBench: Micro-Benchmarking Hierarchical Networks with Multi-GPU, Multi-NIC Nodes</strong><br>
+        Mert Hidayetoglu (Stanford University), Simon Garcia de Gonzalo (Sandia National Laboratories), Elliott Slaughter
+        (SLAC National Accelerator Laboratory), Yu Li (University of Illinois at Urbana-Champaign), Christopher Zimmer
+        (Oak Ridge National Laboratory), Tekin Bicer (Argonne National Laboratory), Bin Ren (William & Mary), William
+        Gropp (University of Illinois at Urbana-Champaign), Wen-mei Hwu (Nvidia Research), Alex Aiken (Stanford
+        University)
+        <p></p>
+      </li>
+      <li><strong>LCM: LLM-focused Hybrid SPM-cache Architecture with Cache Management for Multi-Core AI
+          Accelerators</strong><br>
+        Chengtao Lai (The Hong Kong University of Science and Technology), Zhongchun Zhou (The Hong Kong University of
+        Science and Technology), Akash Poptani (Indian Institute of Technology Dharwad), Wei Zhang (Hong Kong University
+        of Science and Technology)
+        <p></p>
+      </li>
+      <li><strong>FASTEN: Fast GPU-accelerated Segmented Matrix Multiplication for Heterogenous Graph Neural
+          Networks</strong><br>
+        Keren Zhou (George Mason University), Karthik Ganapathi Subramanian (North Carolina State University), Po-Hsun Lin
+        (North Carolina State University), Matthias Fey (Kumo.AI), Binqian Yin (George Mason University), Jiajia Li (North
+        Carolina State University)
+        <p></p>
+      </li>
+      <li><strong>gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters</strong><br>
+        Jiajun Huang (University of California, Riverside), Sheng Di (Argonne National Laboratory), Xiaodong Yu (Stevens
+        Institute of Technology), Yujia Zhai (University of California, Riverside), Jinyang Liu (University of California,
+        Riverside), Yafan Huang (University of Iowa), Ken Raffenetti (Argonne National Laboratory), Hui Zhou (Argonne
+        National Laboratory), Kai Zhao (Florida State University), Xiaoyi Lu (University of California, Merced), Zizhong
+        Chen (University of California, Riverside), Franck Cappello (Argonne National Laboratory & UIUC), Yanfei Guo
+        (Argonne National Laboratory), Rajeev Thakur (Argonne National Laboratory)
+        <p></p>
+      </li>
+      <li><strong>CLAY: CXL-Based Scalable NDP Architecture Accelerating Embedding Layers</strong><br>
+        Sungmin Yun (Seoul National University), Hwayong Nam (Seoul National University), Kwanhee Kyung (Seoul National
+        University), Jaehyun Park (Seoul National University), Byeongho Kim (Samsung), Yongsuk Kwon (Seoul National
+        University), Eojin Lee (Inha University), Jung Ho Ahn (Seoul National University)
+        <p></p>
+      </li>
+      <li><strong>RadiK: Scalable and Optimized GPU-Parallel Radix Top-K Selection</strong><br>
+        Yifei Li (Alibaba Group), Bole Zhou (Independent), Jiejing Zhang (Alibaba Group), Xuechao Wei (Alibaba Group),
+        Yinghan Li (Alibaba Group), Yingda Chen (Alibaba Group)
+        <p></p>
+      </li>
+      <li><strong>A Multi-GPU Communication Profiler and Visualizer</strong><br>
+        Mohammad Kefah Taha Issa (Ko&#231; University, Istanbul, Turkey), Muhammad Aditya Sasongko (Ko&#231; University,
+        Istanbul, Turkey), Ilyas Turimbetov (Ko&#231; University, Istanbul, Turkey), Javid Baydamirli (Ko&#231;
+        University, Istanbul, Turkey), Dogan Sagbili (Ko&#231; University, Istanbul, Turkey), Didem Unat (Ko&#231;
+        University, Istanbul, Turkey)
+        <p></p>
+      </li>
+      <li><strong>AutoSched: An Adaptive Self-configured Framework for Scheduling Deep Learning Training
+          Workloads</strong><br>
+        Wei Gao (Nanyang Technological University), Xu Zhang (Chongqing University), Shan Huang (Nanyang Technological
+        University), Shangwei Guo (Chongqing University), Peng Sun (SenseTime), Yonggang Wen (Nanyang Technological
+        University), Tianwei Zhang (Nanyang Technological University)
+        <p></p>
+      </li>
+      <li><strong>Ymir: A Scheduler for Foundation Model Fine-tuning Workloads in Datacenters</strong><br>
+        Wei Gao (Nanyang Technological University), Weiming Zhuang (Sony AI), Minghao LI (Nanyang Technological
+        University), Peng Sun (SenseTime), Yonggang Wen (Nanyang Technological University), Tianwei Zhang (Nanyang
+        Technological University)
+        <p></p>
+      </li>
+      <li><strong>DAWN: Matrix Operation-Optimized Algorithm for Shortest Paths Problem on Unweighted Graphs</strong><br>
+        Yelai Feng (College of Electronic Engineering, National University of Defense Technology), Huaixi Wang (College of
+        Electronic Engineering, National University of Defense Technology), Yining Zhu (Ningbo Institute of Technology,
+        Zhejiang University), Xiandong Liu (PerfXLab(Beijing) Technologies Co.,Ltd), Hongyi Lu (College of Computer
+        Science and Technology, National University of Defense Technology), Qing Liu (Shanghai Huawei Technologies
+        Co.,Ltd.)
+        <p></p>
+      </li>
+      <li><strong>Arkade: k-Nearest Neighbor Search With Non-Euclidean Distances using GPU Ray Tracing</strong><br>
+        Durga Keerthi Mandarapu (Purdue), Vani Nagarajan (Purdue), Artem Pelenitsyn (Purdue), Milind Kulkarni (Purdue)
+        <p></p>
+      </li>
+      <li><strong>Enhanced UGAL Routing Schemes for Dragonfly Networks</strong><br>
+        Ram Sharan Chaulagain (Florida State University), Xin Yuan (Florida State University)
+        <p></p>
+      </li>
+      <li><strong>A Coordinated Strategy for GNN Combining Computational Graph and Operator Optimizations</strong><br>
+        Mingyi Li (Institute of Computing Technology, Chinese Academy of Sciences), Jumin Xiao (Institute of Computing
+        Technology, Chinese Academy of Sciences), Kewei Zhang (Institute of Computing Technology, Chinese Academy of
+        Sciences), Zhiheng Lin (Institute of Computing Technology, Chinese Academy of Sciences), Chaoyang Shui (Institute
+        of Computing Technology, Chinese Academy of Sciences), Ke Meng (Alibaba Group), Zehua Wang (Institute of Computing
+        Technology, Chinese Academy of Sciences), Yunfei Pang (Institute of Computing Technology, Chinese Academy of
+        Sciences), Guangming Tan (Institute of Computing Technology, Chinese Academy of Sciences)
+        <p></p>
+      </li>
+      <li><strong>NUCAlloc: Fine-Grained Block Placement in Hashed Last-Level NUCA Caches</strong><br>
+        Raveendra Soori (Citrix), Shreyas Prabhu (Apple), Harpreet Singh Chawla (Texas A&M), Michael Ferdman (Stony Brook
+        University)
+        <p></p>
+      </li>
+      <li><strong>Soft Error Resilience at Near-Zero Cost</strong><br>
+        Jianping Zeng (Purdue University), Shao-Yu Huang (Purdue University), Jiuyang Liu (Huazhong University of Science
+        and Technology), Changhee Jung (Purdue University)
+        <p></p>
+      </li>
+      <li><strong>CUT-UAF: Counter Embedding for Use-After-Free Detection</strong><br>
+        Yubo Du (University of Pittsburgh), Yanan Guo (University of Pittsburgh), Youtao Zhang (University of Pittsburgh),
+        Jun Yang (University of Pittsburgh)
+        <p></p>
+      </li>
+      <li><strong>Differentiating Set Intersections in Maximal Clique Enumeration by Function and Subproblem
+          Size</strong><br>
+        Hans Vandierendonck (Queen's University Belfast)
+        <p></p>
+      </li>
+      <li><strong>Shared Virtual Memory: Its Design and Performance Implications for Diverse Applications</strong><br>
+        Bennett Cooper (Clemson University), Tom Scogland (Lawrence Livermore National Lab), Rong Ge (Clemson University)
+        <p></p>
+      </li>
+      <li><strong>NEOCNN: NTT-Enabled Optical Convolution Neural Network Accelerator</strong><br>
+        Xianbin Li (Hong Kong University of Science and Technology), Yinyi Liu (Hong Kong University of Science and
+        Technology), Fan Jiang (Hong Kong University of Science and Technology), Chengeng Li (Hong Kong University of
+        Science and Technology), Yuxiang Fu (Hong Kong University of Science and Technology), Wei Zhang (Hong Kong
+        University of Science and Technology), Jiang Xu (Microelectronics Thrust, Hong Kong University of Science and
+        Technology (Guangzhou))
+        <p></p>
+      </li>
+      <li><strong>RayJoin: Fast and Precise Spatial Join</strong><br>
+        Liang Geng (The Ohio State University), Rubao Lee (Freelance), Xiaodong Zhang (The Ohio State University)
+        <p></p>
+      </li>
+      <li><strong>Stencil Computation with Vector Outer Product</strong><br>
+        Wenxuan Zhao (Institute of Computing Technology, Chinese Academy of Sciences), Liang Yuan (Institute of Computing
+        Technology, Chinese Academy of Sciences), Baicheng Yan (Huawei Technologies Co. Ltd), Penghao Ma (Huawei
+        Technologies Co., Ltd), Yunquan Zhang (Institute of Computing Technology, Chinese Academy of Sciences), Long Wang
+        (Huawei Technologies Co., Ltd), Zhe Wang (Huawei Technologies Co., Ltd)
+        <p></p>
+      </li>
+      <li><strong>HMComp: Extending Near-Memory Capacity using Compression in Hybrid Memory</strong><br>
+        Qi Shao (Chalmers University of Technology), Angelos Arelakis (ZeroPoint Technologies), Per Stenstr&#246;&#109;
+        (Chalmers University of Technology, ZeroPoint Technologies)
+        <p></p>
+      </li>
+      <li><strong>SLIDEX: A Novel Architecture for Sliding Window Processing</strong><br>
+        Ra&#250;&#108; Taranco (Universitat Polit&#232;cnica de Catalunya), Jose Maria Arnau (Universitat Polit&#232;cnica
+        de Catalunya), Antonio Gonzalez (Universitat Polit&#232;cnica de Catalunya)
+        <p></p>
+      </li>
+      <li><strong>Matrix-free SBP-SAT finite difference methods and the multigrid preconditioner on GPUs</strong><br>
+        Alexandre Chen (University of Oregon), Brittany A. Erickson (University of Oregon), Jeremy E. Kozdon (Naval
+        Postgraduate School), Jee Choi (University of Oregon)
+        <p></p>
+      </li>
+      <li><strong>Understanding GPU Memory Corruption at Extreme Scale: The Summit Case Study</strong><br>
+        Vladyslav Oles (Oak Ridge National Laboratory), Anna Schmedding (William & Mary College), George Ostrouchov (Oak
+        Ridge National Laboratory), Woong Shin (Oak Ridge National Laboratory), Evgenia Smirni (WM), Christian Engelmann
+        (Oak Ridge National Laboratory)
+        <p></p>
+      </li>
+      <li><strong>SmartFuse: Reconfigurable Smart Switches to Accelerate Fused Collectives in HPC
+          Applications</strong><br>
+        Pouya Haghi (University of Rochester), Cheng Tan (Microsoft), Anqi Guo (Boston University), Chunshu Wu (University
+        of Rochester), Dongfang Liu (Rochester Institute of Technology), Ang Li (PNNL), Anthony Skjellum (Tennessee Tech
+        University), Tong Geng (University of Rochester), Martin Herbordt (Boston University)
+        <p></p>
+      </li>
+      <li><strong>Minimizing Coherence Errors via Dynamic Decoupling</strong><br>
+        Soheil Khadirsharbiyani (Pennsylvania State University), Movahhed Sadeghi (Pennsylvania State University), Mostafa
+        Eghbali Zarch (North Carolina State University, USA), Mahmut Taylan Kandemir (Pennsylvania State University)
+        <p></p>
+      </li>
+      <li><strong>Input Range Generation for Compiler-Induced Numerical Inconsistencies</strong><br>
+        Dolores Miao (University of California, Davis), Ignacio Laguna (Lawrence Livermore National Laboratory), Cindy
+        Rubio-Gonzﾃ｡lez (University of California, Davis)
+        <p></p>
+      </li>
+      <li><strong>Sylva: Sparse Embedded Adapters via Hierarchical Approximate Second-Order Information</strong><br>
+        Baorun Mu (University of Toronto, CentML), Christina Giannoula (University of Toronto), Shang Wang (University of
+        Toronto, Vector Institute, CentML), Gennady Pekhimenko (University of Toronto, Vector Institute, CentML)
+        <p></p>
+      </li>
+      <li><strong>Optimizing Attention by Exploiting Data Reuse on ARM Multi-core CPUs</strong><br>
+        Xiao Fu (National University of Defense Technology), Weiling Yang (National University of Defense Technology),
+        Xing Su (National University of Defense Technology), Dezun Dong (National University of Defense Technology)
+        <p></p>
+      </li>
+      <li><strong>FuseIM: Fusing Probabilistic Traversals for Influence Maximization on Exascale Systems</strong><br>
+        Reece Neff (North Carolina State University and Pacific Northwest National Laboratory), Mostafa Eghbali Zarch
+        (North Carolina State University, USA), Marco Minutoli (Pacific Northwest National Laboratory), Mahantesh
+        Halappanavar (Pacific Northwest National Laboratory), Antonino Tumeo (Pacific Northwest National Laboratory),
+        Ananth Kalyanaraman (Washington State University), Michela Becchi (North Carolina State University)
+        <p></p>
+      </li>
+      <li><strong>Quasar-ViT: Hardware-Oriented Quantization-Aware Architecture Search for Vision
+          Transformers</strong><br>
+        Zhengang Li (Northeastern University), Alec Lu (Simon Fraser University), Yanyue Xie (Northeastern University),
+        Zhenglun Kong (Northeastern University), Mengshu Sun (Beijing University of Technology), Hao Tang (ETH Zurich),
+        Zhong Jia Xue (Simon Fraser University), Peiyan Dong (Northeastern University), Caiwen Ding (University of
+        Connecticut), Yanzhi Wang (Northeastern University), Xue Lin (Northeastern University), Zhenman Fang (Simon Fraser
+        University)
+        <p></p>
+      </li>
+      <li><strong>RDMA-Based Algorithms for Sparse Matrix Multiplication on GPUs</strong><br>
+        Benjamin Brock (University of California, Berkeley), Ayd&#305;&#110; Bulu&#231; (Lawrence Berkeley National
+        Laboratory), Katherine Yelick (University of California, Berkeley)
+        <p></p>
+      </li>
+      <li><strong>Accurate Computation of the Logarithm of Modified Bessel Functions on GPUs</strong><br>
+        Andreas Plesner (ETH Zurich), Hans Henrik Brandenborg S&#248;&#114;&#101;&#110;&#115;&#101;&#110; (Technical
+        University of Denmark), S&#248;&#114;&#101;&#110; Hauberg (Technical University of Denmark)
+        <p></p>
+      </li>
+      <li><strong>Scheduling for Cyber-Physical Systems with Heterogeneous Processing Units under Real-World
+          Constraints</strong><br>
+        Justin McGowen (Colorado School of Mines), Ismet Dagli (Colorado School of Mines), Neil Dantam (Colorado School of
+        Mines), Mehmet E. Belviranli (Colorado School of Mines)
+        <p></p>
+      </li>
+      <li><strong>Accelerated Auto-Tuning of GPU Kernels for Tensor Computations</strong><br>
+        Chendi Li (University of Utah), Yufan Xu (University of Utah), Sina Mahdipour Saravani (University of Utah), Saday
+        Sadayappan (University of Utah)
+        <p></p>
+      </li>
+      <li><strong>A Unified Representation of Dynamic Topologies & Attributes on HPC Systems</strong><br>
+        Stepan Vanecek (Technical University of Munich), Martin Schulz (Technical University of Munich)
+        <p></p>
+      </li>
+      <li><strong>An Autonomous Parallelization of Transformer Model Inference on Heterogeneous Edge Devices</strong><br>
+        Juhyeon Lee (Sogang University), Insung Bahk (Hallym University), Hoseung Kim (Sungkyunkwan University), Sinjin
+        Jeong (Pusan University), Suyeon Lee (Georgia Institute of Technology), Donghyun Min (Sogang University)
+        <p></p>
+      </li>
+      <li><strong>An Efficient and Scalable Approach to Build Co-occurrence Matrix for DNN's Embedding Layer</strong><br>
+        Quentin Petit (Universit&#233; Paris-Saclay), Chong Li (Huawei Paris Research Center), Nahid Emad (Universit&#233;
+        Versailles Saint-Quentin)
+        <p></p>
+      </li>
+      <li><strong>Tile Size and Loop Order Selection using Machine Learning for Multi-/Many-Core
+          Architectures</strong><br>
+        Shilpa Babalad (Indian Institute of Science, Bangalore, India), Shirish Shevade (Indian Institute of Science,
+        Bangalore, India), Matthew Jacob Thazhuthaveetil (Indian Institute of Science, Bangalore, India), R Govindarajan
+        (Indian Institute of Science, Bangalore, India)
+        <p></p>
+      </li>
+      <li><strong>Fasor: A Fast Tensor Program Optimization Framework for Efficient DNN Deployment</strong><br>
+        Hanxian Huang (UCSD), Xin Chen (Intel), Jishen Zhao (UCSD)
+        <p></p>
+      </li>
+      <li><strong>Distributed Ranges: A Model for Distributed Data Structures, Algorithms, and Views</strong><br>
+        Benjamin Brock (Intel Corporation), Robert Cohn (Intel Corporation), Suyash Bakshi (Intel Corporation), Tuomas
+        Karna (Intel Corporation), Jeongnim Kim (Intel Corporation), Mateusz Nowak (Intel Corporation),
+        &#321;&#117;&#107;&#97;&#115;&#122; &#346;&#108;&#117;&#115;&#97;&#114;&#99;&#122;&#121;&#107; (Intel
+        Corporation), Kacper Stefanski (Intel Corporation), Timothy G. Mattson (Intel Corporation)
+        <p></p>
+      </li>
+      <li><strong>DeepHYDRA: A Hybrid Deep Learning and DBSCAN-Based Approach to Time-Series Anomaly Detection in
+          Dynamically-Configured Systems</strong><br>
+        Franz Kevin Stehle (Heidelberg University, CERN), Wainer Vandelli (CERN), Felix Zahn (CERN), Giuseppe Avolio
+        (CERN), Holger Froening (Heidelberg University)
+        <p></p>
+      </li>
+      <li><strong>Real-time High-resolution X-Ray Computed Tomography</strong><br>
+        Du Wu (Tokyo Institute of Technology), Peng Chen (National Institute of Advanced Industrial Science and
+        Technology), Xiao Wang (Oak Ridge National Laboratory), Issac Lyngaas (Oak Ridge National Laboratory), Takaaki
+        Miyajima (Meiji University), Toshio Endo (Tokyo Institute of Technology), Satoshi Matsuoka (RIKEN Center for
+        Computational Science), Mohamed Wahib (RIKEN Center for Computational Science)
+        <p></p>
+      </li>
+      <li><strong>Exploiting Vector Code Semantics for Efficient Data Cache Prefetching</strong><br>
+        Francesc Martinez Palau (Barcelona Supercomputing Center), Marti Torrents (Barcelona Supercomputing Center),
+        Adri&#224; Armejach (Barcelona Supercomputing Center), Marc Casas (Barcelona Supercomputing Center)
+        <p></p>
+      </li>
+    </ol>
+  </h4>
+</div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3" id="supporters">
+
+        <!-- <div class="row">
+        <h3>Supporters:</h3>
+      </div> -->
+        <div class="row">
+          <!-- <div class="row">
+          <h4>Gold:</h4>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="http://www.paratools.com/" >
+                <img src="../paratools_logo.jpg" height="60" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://www.mellanox.com/" >
+                <img src="../Mellanox-Technologies.jpg" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://www.amd.com/en" >
+                <img src="../53863A_AMD_E_Wh_RGB.jpg" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+          <!-- <div class="row">
+          <div class="col-md-2">
+            <div class="text-center">
+              <a href="https://openpowerfoundation.org/" >
+                <img src="OpenPower_logo_whtbg.png" height="75" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+        </div>
+        <div class="row">
+          <!-- <div class="row">
+          <h4>Bronze:</h4>
+        </div> -->
+          <!-- <div class="row" >
+          <div class="col-md-2" >
+            <div class="text-center" >
+              <a href="https://www.hpccharm.com/">
+                <img src="../charmworks-logo.png" height="60" class="logo">
+              </a>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div id="intelMessage"></div>
+  </div> -->
+
+</body>
+
+</html>
