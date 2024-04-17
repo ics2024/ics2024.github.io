@@ -53,6 +53,16 @@ function addSponsors(intel = 2, harry) {
     html += " </div>";
     html += "</div>";
 
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html += ' <a href="https://www.ddn.com/" >';
+    html += '<img src="images/DDN_Logo.png" height="130" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
     html += '<div class="row">'
     html += "<h3>- Silver</h3>"
     html += "</div>"
