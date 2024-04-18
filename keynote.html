@@ -30,6 +30,27 @@
       addSponsors(getParameterByName("intel"), getParameterByName("harry"));
     });
   </script>
+<script>
+  function toggleText() {
+      var moreText = document.getElementById("more-text");
+      var toggleLink = document.getElementById("toggleLink");
+
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block"; // Changed from 'inline' to 'block' for better display
+        toggleLink.textContent = "Hide";  // Directly modify the text of the specific link
+      } else {
+        moreText.style.display = "none";
+        toggleLink.textContent = "More";  // Directly reset the text of the specific link
+      }
+    }
+</script>
+<style>
+  #content p {
+    margin: 0 0 10px;
+    /* line-height: 1.9; */
+  }
+</style>
+
 </head>
 
 <body>
@@ -161,11 +182,13 @@ Current position since April 2023.
 <h3>
   Biography
   <h4>
-    Mateo Valero, <a href="https://www.bsc.es/mateo-valero">https://www.bsc.es/mateo-valero</a> is professor of Computer
-    Architecture at Technical University of Catalonia (UPC) and is the
-    Founding Director of the Barcelona Supercomputing Center, where his
-    research focuses on high performance computing architectures. He has
-    published approximately 700 papers, has served in the organization of
+<div id="content">
+  <p>Mateo Valero, <a href="https://www.bsc.es/mateo-valero">https://www.bsc.es/mateo-valero</a> is professor of Computer
+  Architecture at Technical University of Catalonia (UPC) and is the
+  Founding Director of the Barcelona Supercomputing Center, where his
+  research focuses on high performance computing architectures.</p>
+  <div id="more-text" style="display: none;">
+    <p>He has published approximately 700 papers, has served in the organization of
     more than 300 International Conferences and has given more than 800
     invited talks. Prof. Valero has been honored with numerous awards,
     among them: The Eckert-Mauchly Award 2007 by IEEE (Institute of
@@ -209,7 +232,10 @@ Current position since April 2023.
     Prize for the Outstanding Collaboration with Latin America and the Caribbean Partners in HPC",
     which will be awarded on an annual basis. In 1998, he was chosen as the favorite son of his town,
     and in 2006, the Alfamén school parents' association decided to name the public school where
-    Professor Valero had studied after him.
+    Professor Valero had studied after him.</p>
+  </div>
+  <a href="#" id="toggleLink" onclick="toggleText(); return false;">More</a>
+</div>
   </h4>
 </h3>
 
