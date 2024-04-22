@@ -31,18 +31,16 @@
     });
   </script>
 <script>
-  function toggleText() {
-      var moreText = document.getElementById("more-text");
-      var toggleLink = document.getElementById("toggleLink");
-
-      if (moreText.style.display === "none") {
-        moreText.style.display = "block"; // Changed from 'inline' to 'block' for better display
-        toggleLink.textContent = "Hide";  // Directly modify the text of the specific link
-      } else {
-        moreText.style.display = "none";
-        toggleLink.textContent = "More";  // Directly reset the text of the specific link
-      }
+  function toggleText(link) {
+    var moreText = link.previousElementSibling;
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      link.textContent = "Hide";
+    } else {
+      moreText.style.display = "none";
+      link.textContent = "More";
     }
+  }
 </script>
 <style>
   #content p {
@@ -196,7 +194,7 @@ Current position since April 2023.
   Architecture at Technical University of Catalonia (UPC) and is the
   Founding Director of the Barcelona Supercomputing Center, where his
   research focuses on high performance computing architectures.</p>
-  <div id="more-text" style="display: none;">
+  <div style="display: none;">
     <p>He has published approximately 700 papers, has served in the organization of
     more than 300 International Conferences and has given more than 800
     invited talks. Prof. Valero has been honored with numerous awards,
@@ -243,19 +241,18 @@ Current position since April 2023.
     and in 2006, the Alfamén school parents' association decided to name the public school where
     Professor Valero had studied after him.</p>
   </div>
-  <a href="#" id="toggleLink" onclick="toggleText(); return false;">More</a>
+  <a href="#" onclick="toggleText(this); return false;">More</a>
 </div>
   </h4>
 </h3>
 
 <h2 class="row">June 7th (Fri), 09:30 - 10:30 JST
   <h3>
-    <!-- <img src="./images/Naoki_Shinjo.jpg" alt="" width="200" align="right"> -->
+    <img src="./images/Michael_Gschwind.png" alt="" width="200" align="right">
     Dr. Michael Gschwind
-    <!-- <h4>
-      SVP, Head of Advanced Technology Development<br>
-      Unit Fujitsu Research FUJITSU LIMITED
-    </h4> -->
+    <h4>
+      Director / Principal Engineer for PyTorch at Meta Platforms
+    </h4>
   </h3>
 
 </h2>
@@ -263,19 +260,59 @@ Current position since April 2023.
 <h3>
   Title
   <h4>
-    TBA.
+  <strong>LLMs Everywhere: Acceleration from Servers to Mobile Devices in the Age of Generative AI</strong>
   </h4>
 </h3>
 <h3>
   Abstract
   <h4>
-    TBA.
+    Large Language Models (LLMs) are a critical milestone on the path to Artificial General Intelligence (AGI). To deliver
+    on this promise, all systems must become supercomputers to deliver the processing power behind LLMs, and eventually AGI.
+    It was only in 2020 that we first demonstrated the use of Large Language Models (LLMs) in production using ASIC and GPU
+    accelerators. Since then, accelerators have become the workhorse of AI, delivering sustainability and efficiency
+    improvements necessary to deliver on the promise of AI at scale. Given how much is at stake, as a community we are
+    exploring exciting new paths that have never been explored, such as low-precision integers, single byte and sub-byte
+    floating point representations that were unimaginable until very recently, and ever more sophisticated collective
+    protocols.<p></p>
+    Combining innovations at the software and hardware levels, the AI, architecture and supercomputing communities have
+    delivered several orders of magnitude improvements in efficiency to enable LLM deployment at scale, building on critical
+    innovations such as Multiray/Textray that keep our communities safe and deliver on the promise of AI sustainability.
+    With the recent announcement of torchchat and ExecuTorch, we are delivering the ability to deploy LLMs from servers to
+    desktop and mobile/edge devices.
   </h4>
 </h3>
 <h3>
   Biography
   <h4>
-    TBA.
+    <div id="content">
+      <p>Dr. Michael Gschwind is a Director / Principal Engineer for PyTorch at Meta Platforms. At Meta, he led the rollout of
+      GPU Inference for production services and was the lead for the development of MultiRay and Textray, the first deployment
+      of LLMs at scale exceeding 800 billion queries per day shortly after its rollout.</p>
+      <div style="display: none;">
+        <p>
+          Dr. Gschwind has led the deployment of LLMs on ASIC and GPU Accelerators as an industry-first and initiated the
+          Accelerated Transformer program (formerly known as "Better Transformer") for PyTorch with critical innovations ranging
+          from theory to practice and hardware design to software optimization.<p></p>
+          Prior to joining Meta, Michael invented general-purpose programmable accelerators with the Cell chip in 2000 used in the
+          PlayStation 3 and Roadrunner, the first Petaflop supercomputer, and led development of the first accelerator software
+          stack. Michael was a lead architect for three supercomputers, Roadrunner, BlueGene and Summit, that were the fastest
+          system of their day, and for three game consoles bringing supercomputer performance into the home (Cell, Xbox360, Wii).
+          Michael led hardware and software architecture for IBM's AI servers, and created and launched IBM's PowerAI
+          software/hardware co-designed platform for enterprise AI. He reinvigorated IBM Systems Architecture as Chief Architect
+          of IBM Systems for all IBM system brands. He brought supercomputer technologies into the mainstream and initiated and
+          led the modernization of mainframe and enterprise servers to support IBM's enterprise AI program. He also served as VP
+          and Chief Architect of Accelerated Computing and Intelligent Applications at Huawei.
+          <p></p>
+          Dr. Gschwind served as faculty member at Princeton and Technische Universität Wien, his alma mater. Dr. Gschwind has
+          previously served as Chair of ACM SIGMICRO, and technical program chair of the ACM International Conference on
+          Supercomputing (ICS), the IEEE International Symposium on High Performance Computer Architecture, HPCA 2018, and
+          ACM/IEEE/IFIP International Conference on Parallel Architectures and Compilation Techniques (PACT), and ACM Computing
+          Frontiers. He is a co-author of over 100 scientific papers and co-inventor of over 1000 US and international patents,
+          and an IEEE Fellow.
+        </p>
+      </div>
+      <a href="#" onclick="toggleText(this); return false;">More</a>
+    </div>
   </h4>
 </h3>
 
