@@ -136,7 +136,7 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html +=
-      ' <a href="https://chiptip.tech/ " target="_blank" rel="noopener noreferrer">';
+      ' <a href="https://chiptip.tech/" target="_blank" rel="noopener noreferrer">';
     html +=
       '<img src="images/chiptip_logo_170720.svg" height="125" class="logo">';
     html += "</a>";
