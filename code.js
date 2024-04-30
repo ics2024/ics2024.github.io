@@ -49,8 +49,8 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html +=
-      ' <a href="https://www.fujitsu.com/" target="_blank" rel="noopener noreferrer">';
-    html += '<img src="images/fujitsu.jpg" height="130" class="logo">';
+      ' <a href="https://www.ddn.com/" target="_blank" rel="noopener noreferrer">';
+    html += '<img src="images/DDN_Logo.png" height="130" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
@@ -60,8 +60,8 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html +=
-      ' <a href="https://www.ddn.com/" target="_blank" rel="noopener noreferrer">';
-    html += '<img src="images/DDN_Logo.png" height="130" class="logo">';
+      ' <a href="https://www.fujitsu.com/" target="_blank" rel="noopener noreferrer">';
+    html += '<img src="images/fujitsu.jpg" height="130" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
@@ -74,17 +74,6 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="row spacing">';
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
-    html +=
-      ' <a href="https://www.ibextech.jp/" target="_blank" rel="noopener noreferrer">';
-    html += '<img src="images/IBEX_Logo-E1.png" height="80" class="logo">';
-    html += "</a>";
-    html += " </div>";
-    html += " </div>";
-    html += "</div>";
-
-    html += '<div class="row spacing">'
-    html += '<div class="col-md-2">'
-    html += '<div class="text-center">'
     html +=
       ' <a href="https://altair.com/" target="_blank" rel="noopener noreferrer">';
     html +=
@@ -100,6 +89,17 @@ function addSponsors(intel = 2, harry) {
     html +=
       ' <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer">';
     html += '<img src="images/dell.png" height="35" class="logo">';
+    html += "</a>";
+    html += " </div>";
+    html += " </div>";
+    html += "</div>";
+
+    html += '<div class="row spacing">';
+    html += '<div class="col-md-2">';
+    html += '<div class="text-center">';
+    html +=
+      ' <a href="https://www.ibextech.jp/" target="_blank" rel="noopener noreferrer">';
+    html += '<img src="images/IBEX_Logo-E1.png" height="80" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
@@ -125,8 +125,9 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html +=
-      ' <a href="https://www.nec.com/" target="_blank" rel="noopener noreferrer">';
-    html += '<img src="images/NEC.png" height="100" class="logo">';
+      ' <a href="https://chiptip.tech/" target="_blank" rel="noopener noreferrer">';
+    html +=
+      '<img src="images/chiptip_logo_170720.svg" height="125" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
@@ -136,9 +137,8 @@ function addSponsors(intel = 2, harry) {
     html += '<div class="col-md-2">';
     html += '<div class="text-center">';
     html +=
-      ' <a href="https://chiptip.tech/" target="_blank" rel="noopener noreferrer">';
-    html +=
-      '<img src="images/chiptip_logo_170720.svg" height="125" class="logo">';
+      ' <a href="https://www.nec.com/" target="_blank" rel="noopener noreferrer">';
+    html += '<img src="images/NEC.png" height="100" class="logo">';
     html += "</a>";
     html += " </div>";
     html += " </div>";
